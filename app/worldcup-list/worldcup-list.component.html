@@ -1,0 +1,25 @@
+<table class="table table-striped">
+  <thead>
+    <th>Id</th>
+    <th>Country</th>
+    <th>Year</th>
+    <th>NoofTeam</th>
+    <th>Venue</th>
+    <th>Delete</th>
+  
+  </thead>
+<tbody>
+  <tr *ngFor="let member of listmembers" >
+    <td>{{member.id}}</td>
+    <td>{{member.country}}</td>
+    <td>{{member.year}}</td>
+    <td>{{member.noofteam}}</td>
+    <td>{{member.venue}}</td>
+    <td>
+      <button (click)="delete(member)" class="btn btn-danger">Delete</button>
+    </td>
+  </tr>
+</tbody>
+
+
+</table>

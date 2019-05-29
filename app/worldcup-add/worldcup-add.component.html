@@ -1,0 +1,22 @@
+<h1 style="color:tomato">ADD MEMBERS</h1>
+
+<div class="form-group">
+  <label for="">Country</label>
+  <input [(ngModel)]="country" type="text" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Year</label>
+  <input [(ngModel)]="year" type="text" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">NoofTeam</label>
+  <input [(ngModel)]="noofteam" type="text" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Venue</label>
+  <input [(ngModel)]="venue" type="text" class="form-control">
+</div>
+<div class="form-group">
+  <button (click)="addList()" class="btn btn-success">Add</button>
+  <button class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+</div>
